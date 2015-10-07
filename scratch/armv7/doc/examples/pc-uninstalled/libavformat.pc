@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavformat
+includedir=/Users/toptierlabs/Desktop/Projects/FFmpeg/FFMpegTest/ffmpeg-2.8
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 56.40.101
+Requires: libavcodec >= 56.60.100, libswresample >= 1.2.101, libavutil >= 54.31.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavformat -framework CoreVideo -framework Foundation -framework AVFoundation -framework CoreMedia -liconv -lm -lbz2 -lz -pthread
+Cflags: -I${includedir}

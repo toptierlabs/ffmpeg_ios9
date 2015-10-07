@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavfilter
+includedir=/Users/toptierlabs/Desktop/Projects/FFmpeg/FFMpegTest/ffmpeg-2.8
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 5.40.101
+Requires: libswscale >= 3.1.101, libavformat >= 56.40.101, libavcodec >= 56.60.100, libswresample >= 1.2.101, libavutil >= 54.31.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavfilter -framework CoreVideo -framework Foundation -framework AVFoundation -framework CoreMedia -liconv -lm -lbz2 -lz -pthread
+Cflags: -I${includedir}

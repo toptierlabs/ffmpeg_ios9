@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavutil
+includedir=/Users/toptierlabs/Desktop/Projects/FFmpeg/FFMpegTest/ffmpeg-2.8
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 54.31.100
+Requires: 
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavutil -lm
+Cflags: -I${includedir}
